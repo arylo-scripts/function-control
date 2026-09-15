@@ -1,32 +1,32 @@
 # function-control
 
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
-Small function parameter helpers for TypeScript projects.
+面向 TypeScript 项目的小型函数参数辅助工具。
 
-## Install
+## 安装
 
 ```sh
 npm install @arylo-scripts/function-control
 ```
 
-## Usage
+## 使用
 
 ```ts
 import { headParams, tailParams } from '@arylo-scripts/function-control'
 
 const logWithScope = headParams(console.log, '[build]')
-logWithScope('started') // Output: [build] started
+logWithScope('started') // 输出: [build] started
 
 const logDone = tailParams(console.log, 'done')
-logDone('build') // Output: build done
+logDone('build') // 输出: build done
 ```
 
 ## API
 
-See the [API reference](./API.md).
+参见 [API 参考](./API.zh-CN.md)。
 
-## Development
+## 开发
 
 ```sh
 npm install
